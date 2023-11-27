@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* global.css */
+
+/* Agrega estilos para el formulario */
+.formContainer {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para mensajes de error */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Estilos para el contenedor de alertas */
+.alert {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fce8e6;
+  color: #dc3545;
+}
+
+/* Estilos para el contenedor de alertas de éxito */
+.success {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #d4edda;
+  color: #155724;
+}
+
+/* globals.css */
+
+/* Resto de tus estilos... */
+
+/* Estilos para los campos del formulario */
+input[type='text'],
+input[type='email'],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc; /* Añade un borde a los campos */
+  border-radius: 4px;
+  box-sizing: border-box; /* Incluye el borde en el tamaño total del campo */
+  color: black; /* Color de texto negro */
+}
+
+/* Estilos para mensajes de error */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Estilos para el contenedor de alertas */
+.alert {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fce8e6;
+  color: #dc3545;
+}
+
+/* Estilos para el contenedor de alertas de éxito */
+.success {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #d4edda;
+  color: #155724;
+}
+label {
+  color: black; /* Color de letra para los textos "Nombre" y "Email" */
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-items: center;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
